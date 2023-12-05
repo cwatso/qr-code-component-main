@@ -1,0 +1,76 @@
+// colors
+
+$white: hsl(0, 0%, 100%);
+$blue-lightest: hsl(212, 45%, 89%);
+$blue-light: hsl(220, 15%, 55%);
+$blue-mid: hsl(228, 45%, 44%);
+$blue-dark: hsl(218, 44%, 22%);
+
+// base settings
+
+$base-margin: 1rem;
+$base-padding: 1rem;
+$base-radius: 1rem;
+$base-font-size: 15px;
+$base-font-family: 'Outfit', sans-serif;
+
+// font sizes and weights
+
+$font-weight-bold: 700;
+$font-weight-normal: 400;
+$font-size-header: 22px;
+$font-size-attribution: 11px;
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: $blue-lightest;
+    font-size: $base-font-size;
+    font-weight: $font-weight-normal;
+    font-family: $base-font-family;
+}
+
+.qr-container {
+    width: 320px;
+    background-color: $white;
+    margin: $base-margin;
+    padding: $base-padding;
+    border-radius: $base-radius;
+    text-align: center;
+
+    img {
+        width: 100%;
+        border-radius: calc($base-radius/2);
+    }
+
+    h1 {
+        color: $blue-dark;
+        font-size: $font-size-header;
+        margin: $base-margin;
+        font-weight: $font-weight-bold;
+    }
+
+    p {
+        color: $blue-light;
+        margin: $base-margin;
+    }
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    font-size: $font-size-attribution;
+    text-align: center;
+
+   a {
+    color: $blue-mid;
+  }
+}

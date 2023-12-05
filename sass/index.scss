@@ -45,6 +45,7 @@ body {
     padding: $base-padding;
     border-radius: $base-radius;
     text-align: center;
+    box-shadow: 0 1rem 2rem rgba($blue-dark, 0.1);
 
     img {
         width: 100%;

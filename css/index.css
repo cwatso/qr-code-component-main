@@ -32,6 +32,8 @@ body {
   padding: 1rem;
   border-radius: 1rem;
   text-align: center;
+  -webkit-box-shadow: 0 1rem 2rem rgba(31, 50, 81, 0.1);
+          box-shadow: 0 1rem 2rem rgba(31, 50, 81, 0.1);
 }
 .qr-container img {
   width: 100%;
